@@ -1,7 +1,6 @@
 "use client";
 // libs
 import { useSuspenseQuery } from "@tanstack/react-query";
-import { memesOptions } from "@/app/meme-list/page";
 import { Heart } from "lucide-react";
 
 // hero-ui
@@ -10,6 +9,7 @@ import { Card, CardBody, CardHeader } from "@heroui/card";
 
 // common
 import { MemeType } from "@/models/meme";
+import { memesOptions } from "@/calls/memes";
 
 // Tailwind for grid
 export default function MemeListView() {

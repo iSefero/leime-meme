@@ -1,6 +1,15 @@
-import { MemeType } from "@/models/meme";
+// libs
 import axios from "axios";
+import { queryOptions } from "@tanstack/react-query";
+
+// common
 import { UpdateMemeRequest } from "./types";
+import { MemeType } from "@/models/meme";
+
+export const memesOptions = queryOptions({
+	queryKey: ["listMemes"],
+	queryFn: listMemes,
+});
 
 export async function listMemes(): Promise<Array<MemeType>> {
 	const response = await axios.get(

@@ -20,7 +20,7 @@ import { Button } from "@heroui/button";
 import { EditMemeForm } from "./MemeForm";
 import { MemeType } from "@/models/meme";
 import { useSuspenseQuery } from "@tanstack/react-query";
-import { memesOptions } from "@/app/meme-table/page";
+import { memesOptions } from "@/calls/memes";
 
 export const columns = [
 	{ name: "ID", uid: "id" },
